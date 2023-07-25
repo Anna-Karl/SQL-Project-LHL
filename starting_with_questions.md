@@ -1,5 +1,7 @@
 Answer the following questions and provide the SQL queries used to find the answer.
 
+
+
     
 **Question 1: Which cities and countries have the highest level of transaction revenues on the site?**
 
@@ -34,6 +36,8 @@ Answer:
 The highest level of transaction revenues between cities: 1. San Francisco, 2.Sunnyvale, 3.Atlanta, 4.Palo Alto, 5.Tel Aviv-Yafo, 6.New York, 7.Mountain View, 8. Los Angeles, 9. Chicago, 10.Sydney.
 
 The highest level of transaction revenues between countries: 1. United States, 2.Israel, 3. Australia, 4. Canada, 5.Switzerland. For further analysis, attention should be paid to the identification of cities in the United States that take a significant part of transaction revenue. 
+
+
 
 
 **Question 2: What is the average number of products ordered from visitors in each city and country?**
@@ -73,6 +77,8 @@ The average number of products ordered from visitors in Spain is 10, United Stat
 The average number of products ordered from visitors by city was distributed as follows: Madrid - 10, Salem - 8, Atlanta - 4, Houston - 2, and other cities show 1 on average.  It should be mentioned about cities about which the information is missed. They also have a high average number, which is important for further analysis.
 
 
+
+
 **Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
 
 SQL Queries:
@@ -102,6 +108,8 @@ Answer:
 The result of query 1 shows that most often such categories as pet accessories, accessories, apparel, nest, notebooks & journals, bags, and housewares were sold in cities of the United States which are not identified. The city of Hong Kong bought a lot of electronic accessories. The other cities do not have enough purchase records to draw any confident conclusions.
 
 The result of query 2 shows that such categories as men's t-shirts, Youtube merchandise, electronics, apparel, and Google brand most commonly occur in orders from the United States. Also, the United Kingdom and India bought products of Youtube merchandise.
+
+
 
 
 **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
@@ -171,6 +179,8 @@ Answer:
 Based on results by countries, 'YouTube Custom Decals' emerges as the top-selling product (United States, India). 'Google Kick Ball' ranks first in sales in the United States. Also, it should be noted that 'Nest Security Camera', 'Youtube Bootle Infuser', and  'Google Water Bottle' are top-ten selling products in the United States.
 
 Based on results by cities, we can conclude that 'Google Kick Ball' was the top-selling product in most of the cities of the United States. However, it is noteworthy that the product with the highest overall sales volume is 'Nest Cam Indoor Security Camera - USA'. Most of these products were bought in such cities as Moutain View, Chicago, New York, and San Francisco.
+
+
 
 
 **Question 5: Can we summarize the impact of revenue generated from each city/country?**
