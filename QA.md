@@ -2,11 +2,11 @@
 
 ### During the work on the project, I have identified the following risk areas that directly can affect the completeness, uniqueness, and consistency of the data:
 
-> Null values. Certain columns of the tables contain either empty values or only a few populated values. Deleting null data requires extra caution in the absence of information about columns that will not be needed and will not be updated in the future.
-> Duplicate values. They appear in multiple tables, lead to faulty conclusions, and affect the identification of the primary key.
-> Inconsistent values. Several tables exhibit duplicate columns with similar types of data, making it hard to know which table contains the data more suited for analysis. Also, data in the same named columns do not always correspond in different tables.
-> Identifying Primary and Foreign Keys. The absence of suitable primary key columns posed risks when joining and integrating data, as well as finding relationships in different tables of the database.
-> Not complete data. For instance, the format of price numbers that are overinflated, wrong or missing terms in columns with country and city names. These types of data are critical for an e-commerce database.
+- Null values. Certain columns of the tables contain either empty values or only a few populated values. Deleting null data requires extra caution in the absence of information about columns that will not be needed and will not be updated in the future.
+- Duplicate values. They appear in multiple tables, lead to faulty conclusions, and affect the identification of the primary key.
+- Inconsistent values. Several tables exhibit duplicate columns with similar types of data, making it hard to know which table contains the data more suited for analysis. Also, data in the same named columns do not always correspond in different tables.
+- Identifying Primary and Foreign Keys. The absence of suitable primary key columns posed risks when joining and integrating data, as well as finding relationships in different tables of the database.
+- Not complete data. For instance, the format of price numbers that are overinflated, wrong or missing terms in columns with country and city names. These types of data are critical for an e-commerce database.
 
 ## QA Process:
 Describe your QA process and include the SQL queries used to execute it.
@@ -18,6 +18,7 @@ Describe your QA process and include the SQL queries used to execute it.
 SELECT currency_code
 FROM public.all_sessions
 WHERE currency_code IS NULL;
+```
 ```
 SELECT *
 FROM public.analytics
@@ -82,6 +83,7 @@ USING TIME '00:00:00' + visit_start_time * INTERVAL '1 second';
 ```
 SELECT DISTINCT product_sku
 FROM public.products;
+```
 ```
 SELECT *
 FROM public.products
