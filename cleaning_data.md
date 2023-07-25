@@ -1,11 +1,17 @@
 # What issues will you address by cleaning the data?
 
  Before creating the database, the data was analyzed in the source tables to set the correct data type and same-style column names (snake_case).
+
  First step: Check for the existing null values, their replacing and deleting.
- Second step: Check and remove duplicate entries
+
+ Second step: Check and remove duplicate entries.
+
  Third step: Check the data types of columns and change them to relevant ones.
+
  Forth step: Converting monetary columns (price, revenue) to appropriate format.
- Fifth step: Editing string values (fixing typos)
+
+ Fifth step: Editing string values (fixing typos).
+ 
  Sixth step: Link tables by defining primary and foreign keys.
 
 
